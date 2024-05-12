@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["css/styles.a9ab8390.css","node_modules/loading-attribute-polyfill/dist/loading-attribute-polyfill.css"],"sourcesContent":["img[data-lazy-src] {\n  will-change: contents;\n}\n\n/*# sourceMappingURL=styles.a9ab8390.css.map */\n","img[data-lazy-src] {\n\twill-change: contents;\n}\n"],"names":[],"version":3,"file":"styles.a9ab8390.css.map"}

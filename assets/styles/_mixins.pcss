@@ -1,0 +1,53 @@
+@define-mixin transition-all $time: 0.25s {
+  transition: ease-in-out $time;
+}
+
+@define-mixin aspect-ratio $width, $height, $maxHeight: 9999px, $minHeight: 0px {
+  position: relative;
+  overflow: hidden;
+
+  /* fix for hover scale on image on Safari 15.1 */
+  mask-image: radial-gradient(white, black);
+
+  &::before {
+    content: '';
+    display: block;
+    padding-bottom: max(min(perc($height, $width), $maxHeight), $minHeight);
+  }
+
+  img,
+  svg,
+  video,
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+}
+
+@define-mixin max-line-length-one {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@define-mixin max-line-length $number {
+  padding: 0 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: $number;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@define-mixin transparent-bg-input $textColor: #ffffff {
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: $textColor !important;
+  }
+}

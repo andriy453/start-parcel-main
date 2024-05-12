@@ -81,9 +81,10 @@
     "dev": "npm-run-all --parallel styles serve",
     "build": "parcel build ./src/*.html --public-url ./ --no-cache",
     "serve": "npm run clean:output && parcel serve ./src/*.html ./src/styles/.output/style.css --no-cache",
-    "styles": "gulp dev",
+    "styles": "gulp dev ",
     "setup": "pnpm i && pnpm run build && node projectSetup.js && pnpm i && pnpm run build && prettier ./html/ --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy":"gh-page -b parcel build ./src/*.html --public-url ./ --no-cache"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",

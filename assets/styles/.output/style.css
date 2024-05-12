@@ -83,6 +83,36 @@ img {
   height: 32px;
 }
 
+.header_Btn{
+    display: flex;
+    justify-content: center;
+    color: rgb(86, 11, 117);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    text-transform: uppercase;
+  
+    background-color: transparent;
+    border: 1px solid rgb(219, 80, 155);
+    border-radius: 1000px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+      0px 6px 12px 0px rgba(0, 0, 0, 0.08);
+    padding: 15px 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .header_Btn{  display: none}
+}
+
+@media screen and (min-width: 768px) {
+    .header_wraperBtn{
+        display: flex;
+        gap: 20px;
+    }
+    
+}
+
 .Burger {
   display: none;
   position: absolute;

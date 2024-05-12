@@ -1,0 +1,86 @@
+<!-- Default Apply Now Popups -->
+<div id="popup-apply-now" class="hidden">
+  <span class="popup__btn-close" onclick="closePopup()" title="Close">
+    <span class="close-clip"></span>
+  </span>
+
+  <h3 class="popup__title">Apply Now</h3>
+
+  <div class="popup__content">
+    <form id="apply_form" class="popup-form">
+      <div class="popup-form__container">
+        <div class="meta-input">
+          <label for="popup-full-name">Full Name</label>
+          <input
+            id="popup-full-name"
+            type="text"
+            placeholder="Type your full name"
+            inputmode="text"
+          />
+        </div>
+        <div class="meta-input">
+          <label for="popup-email">Email</label>
+          <input
+            id="popup-email"
+            type="email"
+            placeholder="Type your email"
+            inputmode="email"
+          />
+        </div>
+        <div class="meta-input">
+          <label for="popup-tel">Phone Number</label>
+          <input
+            id="popup-tel"
+            type="tel"
+            placeholder="Type your phone"
+            inputmode="tel"
+          />
+        </div>
+        <div class="meta-input">
+          <label for="popup-linkedin">LinkedIn</label>
+          <input
+            id="popup-linkedin"
+            type="url"
+            placeholder="Paste your LinkedIn Profile"
+            inputmode="url"
+          />
+        </div>
+
+        <div class="meta-input">
+          <label for="popup-message">Message</label>
+          <textarea
+            data-autosize
+            name="message"
+            id="popup-message"
+            placeholder="Paste your message"
+          ></textarea>
+        </div>
+
+        <div class="meta-upload-file" data-upload-file-animation>
+          <label for="popup-file">Upload File</label>
+          <div class="meta-upload-file__input">
+            <input id="popup-file" type="file" />
+            <span class="meta-upload-file__name">Upload CV</span>
+          </div>
+          <span class="meta-upload-file__info"
+            >PDF, DOCX, DOC, RTF, TXT up to 5MB</span
+          >
+        </div>
+      </div>
+      <div class="popup-form__bottom">
+        <label class="meta-checkbox">
+          <input type="checkbox" name="privacy" value="" />
+          <span class="meta-checkbox__box">
+            <span class="check-clip"></span>
+          </span>
+          <p class="meta-checkbox__text">
+            By clicking this checkbox you confirm that you have read and agree
+            to the
+            <a href="policy.html">privacy policy.</a>
+          </p>
+        </label>
+        <button type="submit" class="popup-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

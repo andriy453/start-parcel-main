@@ -1,0 +1,137 @@
+/* Common effects */
+[data-view] {
+  transition-duration: var(--view-speed);
+  transition-timing-function: var(--view-easing);
+
+  &.animated {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+[data-view='fade'],
+[data-view^='fade'],
+[data-view='zoom'],
+[data-view^='zoom'] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+/* Slide effect */
+[data-view='slide'],
+[data-view^='slide'] {
+  transition-property: transform;
+
+  &.animated {
+    transform: translateZ(0);
+  }
+}
+
+/* Fade and slide effects */
+[data-view='slide-tl'],
+[data-view='fade-tl'] {
+  transform: translateY(100px) translateX(100px);
+}
+
+[data-view='slide-tr'],
+[data-view='fade-tr'] {
+  transform: translateY(100px) translateX(-100px);
+}
+
+[data-view='slide-bl'],
+[data-view='fade-bl'] {
+  transform: translateY(-100px) translateX(100px);
+}
+
+[data-view='slide-br'],
+[data-view='fade-br'] {
+  transform: translateY(-100px) translateX(-100px);
+}
+
+[data-view='fade-l'],
+[data-view='slide-l'] {
+  transform: translateX(100px);
+}
+
+[data-view='fade-r'],
+[data-view='slide-r'] {
+  transform: translateX(-100px);
+}
+
+[data-view='fade-t'],
+[data-view='slide-t'] {
+  transform: translateY(100px);
+}
+
+[data-view='fade-b'],
+[data-view='slide-b'] {
+  transform: translateY(-100px);
+}
+
+/* Zoom effect */
+[data-view^='zoom'],
+[data-view^='zoom'] {
+  &.animated {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }
+}
+
+[data-view='zoom'] {
+  transform: scale(0.1);
+}
+
+[data-view='zoom-l'] {
+  transform: translateX(100px) scale(0.1);
+}
+
+[data-view='zoom-tl'] {
+  transform: translateY(100px) translateX(100px) scale(0.1);
+}
+
+[data-view='zoom-tr'] {
+  transform: translateY(100px) translateX(-100px) scale(0.1);
+}
+
+[data-view='zoom-br'] {
+  transform: translateY(-100px) translateX(-100px) scale(0.1);
+}
+
+[data-view='zoom-bl'] {
+  transform: translateY(-100px) translateX(100px) scale(0.1);
+}
+
+[data-view='zoom-r'] {
+  transform: translateX(-100px) scale(0.1);
+}
+
+[data-view='zoom-t'] {
+  transform: translateY(100px) scale(0.1);
+}
+
+[data-view='zoom-b'] {
+  transform: translateY(-100px) scale(0.1);
+}
+
+/* Rotate effect */
+[data-view^='rotate'],
+[data-view^='rotate'] {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+[data-view='rotate-l'] {
+  transform: rotate(180deg) translateX(-100px);
+}
+
+[data-view='rotate-r'] {
+  transform: rotate(180deg) translateX(100px);
+}
+
+[data-view='rotate-t'] {
+  transform: rotate(180deg) translateY(-100px);
+}
+
+[data-view='rotate-b'] {
+  transform: rotate(180deg) translateY(100px);
+}

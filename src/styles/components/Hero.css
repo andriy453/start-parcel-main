@@ -1,0 +1,224 @@
+.Hero{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+
+.swiper {
+  max-width: 1440px;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: none !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: none !important;
+}
+.swiper-button-prev {
+  border-radius: 1000px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+    0px 6px 12px 0px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.5);
+  top: 600px;
+  left: -170px;
+  padding: 24px 22px;
+  width: 64px;
+  height: 64px;
+}
+.swiper-button-next {
+  border-radius: 1000px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+    0px 6px 12px 0px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.5);
+  top: 600px;
+  /* left: 0px; */
+  padding: 24px 22px;
+  width: 64px;
+  height: 64px;
+}
+.swiper-icon {
+  transform: rotate(180deg);
+  width: 21.2px;
+  height: 16px;
+}
+.swiper-icon2 {
+  width: 21.2px;
+  height: 16px;
+}
+.Hero_slide1 {
+  background-image: url(../../assets//images/HeroSliderMob.png);
+  width: 100%;
+  height: 688px;
+  background-repeat: no-repeat;
+}
+.Hero_slide2 {
+  background-image: url(../../assets//images/HeroSliderMob2.png);
+  width: 100%;
+  height: 688px;
+  background-repeat: no-repeat;
+}
+.Hero_slide3 {
+  background-image: url(../../assets//images/HeroSliderMob3.png);
+  width: 100%;
+  height: 688px;
+  background-repeat: no-repeat;
+}
+
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2%;
+  text-align: start;
+  max-width: 400px;
+
+  margin-bottom: 24px;
+}
+.title div {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 144%;
+  letter-spacing: 2%;
+  text-align: start;
+
+  margin-bottom: 24px;
+}
+.Hero_wraper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.Hero_btn1 {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1000px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+    0px 6px 12px 0px rgba(0, 0, 0, 0.08);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 8%;
+  padding: 15px 32px;
+}
+.Hero_btn2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(219, 80, 155);
+  border-radius: 1000px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+    0px 6px 12px 0px rgba(0, 0, 0, 0.08);
+  background: rgb(255, 255, 255);
+
+  color: rgb(128, 0, 179);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 8%;
+  text-align: left;
+  padding: 15px 32px;
+}
+@media screen and (min-width: 375px) {
+  .Hero_slide1 {
+    background-image: url(../../assets//images/HeroSliderDes.png);
+    width: 100%;
+    height: 688px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Hero_slide2 {
+    background-image: url(../../assets//images/HeroSliderDes2.png);
+    width: 100%;
+    height: 688px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Hero_slide3 {
+    background-image: url(../../assets//images/HeroSliderDes3.png);
+    width: 100%;
+    height: 688px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .Hero_wraper {
+    flex-direction: row;
+  }
+}
+.slider_wrapper{
+    padding: 158px 24px;
+    padding-bottom: 150px;
+}
+@media screen and (max-width: 375px) {
+  .Hero_btn2 {
+    width: 100%;
+  }
+  .Hero_btn1 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+    margin-bottom: 24px;
+    max-width: 638px;
+  }
+  .subtitle {
+    font-size: 28px;
+    margin-bottom: 48px;
+    width: 638px;
+  }
+  .title div {
+    font-size: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider_wrapper {
+    padding: 158px 82px;
+    justify-content: center;
+    height: 780px;
+    padding-bottom: 150px;
+  }
+
+}
+
+.btn_wrapper {
+  position: absolute;
+  right: 80px;
+  top: 0px;
+}

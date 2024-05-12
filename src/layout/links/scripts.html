@@ -1,0 +1,52 @@
+<script src="npm:scroll-lock" type="text/javascript"></script>
+<script
+  src="npm:simplebar/dist/simplebar.min.js"
+  type="text/javascript"
+></script>
+<script
+  src="npm:loading-attribute-polyfill/dist/loading-attribute-polyfill.umd.js"
+  type="text/javascript"
+></script>
+
+<!-- Container Query Polyfill -->
+<!--<script src="npm:cq-prolyfill"></script>-->
+
+<!-- DotLottie CDN Link -->
+<script src="https://cdn.jsdelivr.net/npm/@dotlottie/player-component@1.4.2/dist/dotlottie-player.min.js"></script>
+
+<script type="module" src="../../js/main.js"></script>
+
+<script data-remove-for-sd="true">
+  var popupFD = document.querySelector('#popup');
+  if (popupFD) {
+    /*var popupTitle = popupFD.querySelector(".popup__title");*/
+    var popupBlock = popupFD.querySelector('#popup-block');
+
+    window.pushPopup = function pushPopup(parentBlock, classHelper = '') {
+      if (classHelper) {
+        const cls = classHelper.split(' ');
+        popupBlock.classList.add(...cls);
+      }
+
+      popupBlock.innerHTML = '';
+      popupBlock.innerHTML = document.querySelector(parentBlock).innerHTML;
+
+      popupFD.classList.add('active');
+      scrollLock.disablePageScroll(document.querySelector('.navbar-nav .menu'));
+      scrollLock.addScrollableSelector('.simplebar-content-wrapper');
+
+      var scrollContentElement = document.querySelector('.popup__content');
+
+      if (scrollContentElement) {
+        var simpleBarInstance = new SimpleBar(scrollContentElement);
+        simpleBarInstance.recalculate();
+      }
+    };
+  }
+
+  function closePopup() {
+    document.querySelector('#popup').classList.remove('active');
+    scrollLock.clearQueueScrollLocks();
+    scrollLock.enablePageScroll();
+  }
+</script>

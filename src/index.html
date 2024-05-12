@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="npm:normalize.css" type="text/css" rel="stylesheet" />
+
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link
+    href="npm:simplebar/dist/simplebar.min.css"
+    type="text/css"
+    rel="stylesheet"
+  />
+
+  <link
+    href="npm:loading-attribute-polyfill/dist/loading-attribute-polyfill.css"
+    type="text/css"
+    rel="stylesheet"
+  />
+
+  <link href="./styles/tailwind.pcss" type="text/css" rel="stylesheet" />
+
+  <link
+    href="./styles/.output/style.css"
+    data-remove-for-sd="true"
+    type="text/css"
+    rel="stylesheet"
+  />
+  <body>
+    <header class="header">
+      <svg class="header_logo">
+        <use href="./assets/images/sprite.svg#icon-logo"></use>
+      </svg>
+      <button class="header_burgerMenu">
+        <svg class="header_burgerMenuLogo">
+          <use href="./assets/images/sprite.svg#icon-Frame"></use>
+        </svg>
+      </button>
+    </header>
+    <!-- !!!burgerMenu -->
+    <div class="Burger">
+      <button class="Burger_close">
+        <svg class="Burger_icon">
+          <use href="./assets/images/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- !!!burgerMenu -->
+    <main>
+      <section class="Hero">
+        <!-- Hero -->
+
+        <!-- Swiper -->
+        <div class="swiper myswiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide Hero_slide1">
+              <div class="slider_wrapper">
+                <h1 class="title">
+                  <div>Empowering</div>
+                  Education through Exceptional Talent
+                </h1>
+                <p class="subtitle">
+                  Connecting London Schools with outstanding Teachers, Graduate
+                  Teaching Assistants and Support Staff
+                </p>
+                <div class="Hero_wraper">
+                  <button class="Hero_btn1">Schools We Work With</button>
+                  <button class="Hero_btn2">Our jobs</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide Hero_slide2">
+              <div class="slider_wrapper">
+                <h1 class="title">
+                  <div>register</div>
+                  with us today!
+                </h1>
+                <p class="subtitle">
+                  Launch Your Career, Inspiring Young Minds: Your Path to
+                  Teaching Excellence Begins Here!
+                </p>
+                <div class="Hero_wraper">
+                  <button class="Hero_btn1">Schools We Work With</button>
+                  <button class="Hero_btn2">Our jobs</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide Hero_slide3">
+              <div class="slider_wrapper">
+                <h1 class="title">
+                  <div>Pathways to</div>
+                  Permanent Positions
+                </h1>
+                <p class="subtitle">
+                  Forging lasting connections between dedicated teachers and
+                  schools in London and the UK.
+                </p>
+                <div class="Hero_wraper">
+                  <button class="Hero_btn1">Schools We Work With</button>
+                  <button class="Hero_btn2">Our jobs</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_wrapper">
+            <div class="swiper-button-prev">
+              <svg class="swiper-icon2">
+                <use href="./assets/images/sprite.svg#icon-Vector"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="swiper-icon">
+                <use href="./assets/images/sprite.svg#icon-Vector"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="About">
+        <picture class="About_img">
+          <source
+            srcset="./assets/images/about_imgDes2x.png"
+            media="(min-width:  768px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="./assets/images/about_imgDes.png"
+            media="(min-width:  768px)"
+          />
+          <source
+            srcset="./assets/images/about_img2x.png"
+            media="(max-width: 767px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="./assets/images/about_img.png"
+            media="(max-width: 767px)"
+          />
+          <img src="./assets/images/about_img.png" alt="User" />
+        </picture>
+
+        <div class="About_wraper">
+          <span class="About_text">about us</span>
+          <h2 class="About_title">
+            Leading Education Recruitment Company in London
+          </h2>
+          <p class="About_subtitle">
+            At Riley Personnel, we believe in the transformative power of
+            education. Our mission extends beyond mere recruitment; it's about
+            fostering a community where educators and institutions thrive
+            together. With a steadfast commitment to quality, integrity, and
+            innovation, we are dedicated to connecting the finest educators with
+            premier educational institutions.
+          </p>
+          <button class="About_btn">More about us</button>
+        </div>
+      </section>
+      <section class="Company">
+        <picture class="Company_img">
+          <source
+            srcset="./assets/images/CompanyDes2x.png"
+            media="(min-width:  768px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="./assets/images/CompanyDes.png"
+            media="(min-width:  768px)"
+          />
+          <source
+            srcset="./assets/images/CompanyMob2x.png"
+            media="(max-width: 767px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="./assets/images/companyMob.png"
+            media="(max-width: 767px)"
+          />
+          <img src="./assets/images/companyMob.png" alt="User" />
+        </picture>
+
+        <div class="Company_wraper">
+          <span class="Company_text">Pathways to Permanent Positions</span>
+          <h2 class="Company_title">
+            Leading Education Recruitment Company in London
+          </h2>
+          <p class="Company_subtitle">
+            At Riley Personnel, we believe in the transformative power of
+            education. Our mission extends beyond mere recruitment; it's about
+            fostering a community where educators and institutions thrive
+            together. With a steadfast commitment to quality, integrity, and
+            innovation, we are dedicated to connecting the finest educators with
+            premier educational institutions.
+          </p>
+          <div class="Company_Btn_wraper">
+            <button class="Company_btn">LEARN MORE</button>
+            <button class="Company_btn">Search Our Jobs</button>
+          </div>
+        </div>
+        <section class="Programe">
+          <picture class="Programe_img">
+            <source
+              srcset="./assets/images/ProgrameDes2x.png"
+              media="(min-width:  768px) and (min-resolution: 2dppx)"
+            />
+            <source
+              srcset="./assets/images/ProgrameDes.png"
+              media="(min-width:  768px)"
+            />
+            <source
+              srcset="./assets/images/ProgrameMob2x.png"
+              media="(max-width: 767px) and (min-resolution: 2dppx)"
+            />
+            <source
+              srcset="./assets/images/ProgrameMob.png"
+              media="(max-width: 767px)"
+            />
+            <img src="./assets/images/ProgrameMob.png" alt="User" />
+          </picture>
+
+          <div class="Programe_wraper">
+            <span class="Programe_text">Aspirational Graduates Programme</span>
+            <h2 class="Programe_title">Aspirational Graduates Programme</h2>
+            <p class="Programe_subtitle">
+              At Riley Personnel, we believe in the transformative power of
+              education. Our mission extends beyond mere recruitment; it's about
+              fostering a community where educators and institutions thrive
+              together. With a steadfast commitment to quality, integrity, and
+              innovation, we are dedicated to connecting the finest educators
+              with premier educational institutions.
+            </p>
+            <div class="Programe_Btn_wraper">
+              <button class="Programe_btn">Learn more</button>
+              <button class="Programe_btn">Search Our Jobs</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="Sectors">
+        <div class="Sectors_Wraper">
+          <div>
+            <p class="Sectors_text">OUR SECTORS</p>
+            <h3 class="Sectors_title">Sectors we recruit in</h3>
+          </div>
+          <button class="Sectors_btn">CURRENT OPORTUNITES</button>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper  Swiper" >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img src="./assets//images/card_slider_img.png" alt="" />
+                <div class="Sectors_WraperCard">
+                  <h3 class="Sectors_title_card">Primary Schools</h3>
+                  <p class="Sectors_subtitle_card">
+                    From early years to key stage 2, we specialise in recruiting
+                    teaching assistants (TAs), experienced teachers, and
+                    aspiring leaders for primary schools.
+                  </p>
+                  <span class="Sectors_text_card">View Opportunities</span>
+                  <button class="Sectors_Btn_card">
+                    <svg class="swiper-icon2">
+                      <use href="./assets/images/sprite.svg#icon-Vector"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const btnBurger = document.querySelector('.header_burgerMenu');
+      const Burger = document.querySelector('.Burger');
+      const BurgerClose = document.querySelector('.Burger_close');
+
+      btnBurger.addEventListener(
+        'click',
+        () =>
+          (Burger.style.cssText = `
+  display: block;
+`)
+      );
+      BurgerClose.addEventListener(
+        'click',
+        () =>
+          (Burger.style.cssText = `
+  display: none;
+`)
+      );
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize swiper -->
+    <script>
+      var swiper = new Swiper('.myswiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        centeredSlides: false,
+        spaceBetween: 30,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },      
+          breakpoints: {
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+        },
+        
+        breakpoints: {
+          1280: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>

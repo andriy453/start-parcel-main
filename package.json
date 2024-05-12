@@ -1,0 +1,193 @@
+{
+  "name": "parcel-start",
+  "version": "1.4.11",
+  "type": "module",
+  "packageManager": "pnpm@9.1.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "Safari >= 14.1",
+    "iOS >= 14.5"
+  ],
+  "parcel-namer-rewrite": {
+    "chain": "@parcel/namer-default",
+    "hashing": "always",
+    "rules": {
+      "(.*).css": "css/styles{.hash}.css",
+      "(.*).js": "js/scripts{.hash}.js",
+      "(.*).jpg": "img/$1.jpg",
+      "(.*).jpeg": "img/$1.jpeg",
+      "(.*).png": "img/$1.png",
+      "(.*).svg": "img/$1.svg",
+      "(.*).gif": "img/$1.gif",
+      "(.*).webp": "img/$1.webp",
+      "(.*).woff": "fonts/$1.woff",
+      "(.*).woff2": "fonts/$1.woff2",
+      "(.*).ttf": "fonts/$1.ttf",
+      "(.*).eot": "fonts/$1.eot",
+      "(.*).otf": "fonts/$1.otf",
+      "(.*).mp4": "video/$1.mp4",
+      "(.*).ico": "img/$1.ico"
+    },
+    "profiles": {
+      "development": {
+        "hashing": "always"
+      }
+    }
+  },
+  "staticFiles": [
+    {
+      "staticPath": "./src/assets/fonts",
+      "staticOutPath": "assets/fonts"
+    },
+    {
+      "staticPath": "./src/assets/static",
+      "staticOutPath": "assets/static"
+    },
+    {
+      "staticPath": "./src/assets/lottie",
+      "staticOutPath": "assets/lottie"
+    },
+    {
+      "staticPath": "./src/js",
+      "staticOutPath": "assets/scripts"
+    },
+    {
+      "staticPath": "./src/styles",
+      "staticOutPath": "assets/styles"
+    },
+    {
+      "staticPath": "./src/layout/links",
+      "staticOutPath": "assets/links"
+    },
+    {
+      "staticPath": "./scan.php",
+      "staticOutPath": "./"
+    },
+    {
+      "staticPath": "./.htaccess",
+      "staticOutPath": "./"
+    }
+  ],
+  "scripts": {
+    "clean:output": "rimraf ['dist', 'src/styles/.output']",
+    "prebuild": "rimraf [dist, src/styles/.output]",
+    "dev": "npm-run-all --parallel styles serve",
+    "build": "parcel build ./src/*.html --public-url ./ --no-cache",
+    "serve": "npm run clean:output && parcel serve ./src/*.html ./src/styles/.output/style.css --no-cache",
+    "styles": "gulp dev",
+    "setup": "pnpm i && pnpm run build && node projectSetup.js && pnpm i && pnpm run build && prettier ./html/ --write",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@parcel/compressor-brotli": "^2.9.3",
+    "@parcel/compressor-gzip": "^2.9.3",
+    "@parcel/config-default": "^2.9.3",
+    "@parcel/core": "^2.9.3",
+    "@parcel/reporter-bundle-buddy": "^2.9.3",
+    "@parcel/resolver-glob": "^2.9.3",
+    "@parcel/source-map": "^2.1.1",
+    "@parcel/transformer-sass": "^2.9.3",
+    "autoprefixer": "^10.4.14",
+    "buffer": "^6.0.3",
+    "child_process": "^1.0.2",
+    "cq-prolyfill": "^0.4.0",
+    "del": "^7.1.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.43.0",
+    "gulp": "^4.0.2",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-prettier": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
+    "ora": "^7.0.1",
+    "parcel": "^2.9.3",
+    "parcel-namer-rewrite": "2.0.0-rc.3",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "parcel-resolver-ignore": "^2.1.5",
+    "path": "^0.12.7",
+    "pnpm": "9.1.0",
+    "postcss": "^8.4.24",
+    "postcss-color-function": "^4.1.0",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-comment": "^2.0.0",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-conditionals-renewed": "^1.0.0",
+    "postcss-custom-properties": "^12.1.8",
+    "postcss-extend": "^1.0.5",
+    "postcss-functions": "^4.0.2",
+    "postcss-import": "^14.1.0",
+    "postcss-import-ext-glob": "^2.1.1",
+    "postcss-mixins": "^9.0.3",
+    "postcss-nested": "^5.0.6",
+    "postcss-nesting": "^10.1.10",
+    "postcss-preset-env": "^7.7.2",
+    "postcss-reporter": "^7.0.5",
+    "postcss-short": "^5.0.0",
+    "postcss-short-native-vars": "^1.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^1.7.4",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.1",
+    "semantic-release-slack-bot": "^4.0.2",
+    "sharp": "^0.31.3",
+    "slackify-markdown": "^4.4.0",
+    "tailwindcss": "^3.4.0",
+    "through2": "^4.0.2",
+    "unzipper": "^0.10.14"
+  },
+  "dependencies": {
+    "countup.js": "^2.6.2",
+    "loading-attribute-polyfill": "^2.1.1",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.64.1",
+    "scroll-lock": "^2.1.5",
+    "simplebar": "^6.2.5",
+    "swiper": "^9.4.1"
+  },
+  "alias": {
+    "process": "process/browser.js",
+    "buffer": "buffer",
+    "~/*": "./$1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "type-enum": [
+        2,
+        "always",
+        [
+          "feat",
+          "fix",
+          "hotfix",
+          "add",
+          "perf",
+          "revert",
+          "docs",
+          "style",
+          "refactor",
+          "test",
+          "build",
+          "ci",
+          "chore"
+        ]
+      ]
+    }
+  }
+}

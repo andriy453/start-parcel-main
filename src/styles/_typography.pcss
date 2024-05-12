@@ -1,0 +1,146 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--cl-grey);
+}
+
+h1 {
+  font-size: ac(70px, 37px);
+  line-height: normal;
+
+  @mixin max-sm {
+    line-height: 129%;
+  }
+}
+
+h2 {
+  font-size: ac(50px, 27px);
+  line-height: normal;
+
+  @mixin max-sm {
+    line-height: 140%;
+  }
+
+  &.subtitle {
+    font-size: ac(35px, 22px);
+    line-height: 140%;
+  }
+}
+
+h3 {
+  font-size: ac(25px, 22px);
+  line-height: normal;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: ac(20px, 18px);
+  line-height: 140%;
+  font-weight: 400;
+
+  @mixin max-sm {
+    line-height: 155%;
+  }
+}
+
+h5 {
+  font-size: ac(28px, 20px);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: ac(24px, 18px);
+  font-weight: 500;
+
+  line-height: 2;
+}
+
+p {
+  font-size: ac(18px, 16px);
+  font-weight: 400;
+  color: var(--cl-medium-grey);
+
+  line-height: 144%;
+
+  @mixin max-sm {
+    line-height: 162%;
+  }
+}
+
+li {
+  font-size: ac(18px, 16px);
+  font-weight: 400;
+  color: var(--cl-medium-grey);
+
+  line-height: 144%;
+
+  @mixin max-sm {
+    line-height: 162%;
+  }
+}
+
+a {
+  font-size: ac(20px, 16px);
+  font-weight: 500;
+  display: inline-block;
+  line-height: 100%;
+}
+
+.content-element {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  }
+
+  h4 {
+    color: var(--cl-medium-grey);
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: ac(20px, 16px);
+    }
+  }
+
+  ol,
+  ul {
+    li {
+      list-style-position: inside;
+    }
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  li,
+  p {
+    /*Not Design*/
+    &:not(:last-child) {
+      margin-bottom: ac(20px, 16px);
+    }
+  }
+}
+
+.dark-bg {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    color: var(--cl-white);
+  }
+}

@@ -1,0 +1,7 @@
+.eslintignore
+.husky
+.prettierignore
+.eslintrc.cjs
+package.json
+pnpm-lock.yaml
+release.config.cjs

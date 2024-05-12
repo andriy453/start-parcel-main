@@ -1,0 +1,8 @@
+.husky
+.parcel-cache
+*.json
+
+pnpm-lock.yaml
+.eslintignore
+.idea
+.htaccess

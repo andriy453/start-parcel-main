@@ -91,3 +91,42 @@
     width: 100%;
   }
 }
+
+
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'New Order';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/fonnts.com-New_Order_Regular.otf') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'New Order';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../assets/fonts/fonnts.com-New_Order_Medium.otf') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'New Order';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../assets/fonts/fonnts.com-New_Order_Semibold.otf') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'New Order';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/fonts/fonnts.com-New_Order_Bold.otf') format('woff2');
+}
+
+body{
+  font-family: New Order;
+  font-weight: 400;
+}

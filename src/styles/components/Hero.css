@@ -1,9 +1,7 @@
-.Hero{
-    max-width: 1440px;
-    margin: 0 auto;
-
+.Hero {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-
 
 .swiper {
   max-width: 1440px;
@@ -13,7 +11,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
- 
+
   display: flex;
   flex-direction: column;
 }
@@ -87,7 +85,6 @@
   height: 688px;
   background-repeat: no-repeat;
 }
-
 
 .title {
   color: rgb(255, 255, 255);
@@ -179,9 +176,9 @@
     flex-direction: row;
   }
 }
-.slider_wrapper{
-    padding: 158px 24px;
-    padding-bottom: 150px;
+.slider_wrapper {
+  padding: 158px 24px;
+  padding-bottom: 150px;
 }
 @media screen and (max-width: 375px) {
   .Hero_btn2 {
@@ -214,7 +211,6 @@
     height: 780px;
     padding-bottom: 150px;
   }
-
 }
 
 .btn_wrapper {

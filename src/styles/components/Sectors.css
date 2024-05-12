@@ -5,7 +5,6 @@
   background-position: center;
   background-size: cover;
 
-
   max-width: 375px;
 }
 
@@ -50,54 +49,55 @@
   background: rgb(200, 42, 122);
   padding: 15px 32px;
 }
-.Sectors_WraperCard{ 
-  border-radius:0px 0px   40px 40px;
-  padding: 32px 40px 40px 40px ;
+.Sectors_WraperCard {
+  border-radius: 0px 0px 40px 40px;
+  padding: 32px 40px 40px 40px;
   background: rgb(86, 11, 117);
 }
-.card img{
-  border-radius:  40px 40px 0px 0px ;
+.card img {
+  border-radius: 40px 40px 0px 0px;
 }
-.card{
+.card {
   width: 300px;
 }
-.Sectors_title_card{
-color: rgb(255, 255, 255);
-font-size: 36px;
-font-weight: 600;
-line-height: 48px;
-letter-spacing: 2%;
-text-align: left;
-margin-bottom: 16px;
+.Sectors_title_card {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 2%;
+  text-align: left;
+  margin-bottom: 16px;
 }
-.Sectors_subtitle_card{
-color: rgb(255, 255, 255);
-font-size: 18px;
-font-weight: 400;
-line-height: 148%;
-letter-spacing: 1%;
-text-align: left;
-margin-bottom: 46px;
+.Sectors_subtitle_card {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 148%;
+  letter-spacing: 1%;
+  text-align: left;
+  margin-bottom: 46px;
 }
-.Sectors_text_card{
-color: rgb(255, 255, 255);
-font-family: Rubik;
-font-size: 18px;
-font-weight: 500;
-line-height: 21px;
-letter-spacing: 4%;
-text-align: left;
+.Sectors_text_card {
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 4%;
+  text-align: left;
 }
-.Sectors_Btn_card{
+.Sectors_Btn_card {
   border: 1px solid rgb(255, 255, 255);
-border-radius: 100px;
-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),0px 6px 12px 0px rgba(0, 0, 0, 0.08);
-background: rgba(255, 255, 255, 0.01);
-padding: 10px;
-transform: rotate(180deg);
-display: inline-flex;
-justify-content: center;
-align-items: center;
+  border-radius: 100px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12),
+    0px 6px 12px 0px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.01);
+  padding: 10px;
+  transform: rotate(180deg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .Sectors_Wraper {
@@ -131,14 +131,14 @@ align-items: center;
 @media only screen and (min-width: 769px) {
   .Swiper {
     /* padding: 10px; */
-
-  }  .card{
+  }
+  .card {
     width: 400px;
   }
   .Sectors {
     padding: 512px 82px 82px;
     max-width: 1440px;
-    background-image: url(../../assets//images/BGSliderDes.png)
+    background-image: url(../../assets//images/BGSliderDes.png);
   }
   .Swiper-slide:first-child {
     transition: transform 100ms;
@@ -176,11 +176,10 @@ align-items: center;
 }
 .swiper-backface-hidden .swiper-slide-active .card {
   transform: scale(1.1);
-  transition:transform 500ms ;
+  transition: transform 500ms;
 }
 @media only screen and (min-width: 1280px) {
-  .card{
+  .card {
     width: 350px;
   }
 }
-
